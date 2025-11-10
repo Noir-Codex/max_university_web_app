@@ -1,0 +1,116 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.monthGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.dayColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.monthDay {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px;
+  background-color: var(--tg-theme-secondary-bg-color, #f8f9fa);
+  border-radius: 8px;
+  border: 1px solid var(--tg-theme-hint-color, #e0e0e0);
+}
+
+.dayHeader {
+  padding: 12px 16px;
+  background-color: var(--tg-theme-secondary-bg-color, #f1f3f4);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.monthDayHeader {
+  padding: 10px 14px;
+  background-color: var(--tg-theme-bg-color, #ffffff);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.monthDayHeader.today {
+  background-color: rgba(51, 144, 236, 0.1);
+}
+
+.monthDate {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--tg-theme-text-color, #000000);
+}
+
+.monthDayName {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--tg-theme-hint-color, #929292);
+  flex: 1;
+  text-align: right;
+}
+
+.dayHeader.today {
+  background-color: rgba(51, 144, 236, 0.1);
+}
+
+.dayName {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--tg-theme-text-color, #000000);
+}
+
+.todayBadge {
+  padding: 4px 8px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--tg-theme-button-text-color, #ffffff);
+  background-color: var(--tg-theme-button-color, #3390ec);
+  border-radius: 6px;
+  text-transform: uppercase;
+}
+
+.lessonsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.monthLessons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.noLessons {
+  padding: 24px;
+  text-align: center;
+  font-size: 14px;
+  color: var(--tg-theme-hint-color, #929292);
+  background-color: var(--tg-theme-secondary-bg-color, #f1f3f4);
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .monthGrid {
+    grid-template-columns: 1fr;
+  }
+}

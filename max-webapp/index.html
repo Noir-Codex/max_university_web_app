@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    
+    <!-- Viewport для MAX WebApp -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    
+    <!-- Meta теги для MAX платформы -->
+    <meta name="description" content="MAX WebApp - Система учёта посещаемости" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Посещаемость" />
+    <meta name="format-detection" content="telephone=no" />
+    
+    <title>MAX WebApp</title>
+    
+    <!-- MAX Bridge API - загружается первым -->
+    <script src="https://st.max.ru/js/max-web-app.js"></script>
+    
+    <style>
+      /* Предзагрузочный экран */
+      #loading {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--tg-theme-bg-color, #ffffff);
+        z-index: 9999;
+      }
+      
+      #loading-spinner {
+        width: 40px;
+        height: 40px;
+        border: 3px solid var(--tg-theme-hint-color, #e0e0e0);
+        border-top-color: var(--tg-theme-button-color, #3390ec);
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+      
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Предзагрузочный экран -->
+    <div id="loading">
+      <div id="loading-spinner"></div>
+    </div>
+    
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

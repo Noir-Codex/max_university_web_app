@@ -1,0 +1,27 @@
+/* Layout для MAX WebApp - адаптивный */
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--tg-theme-bg-color, #ffffff);
+  width: 100%;
+}
+
+.main {
+  flex: 1;
+  padding: 16px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* Адаптация для MAX мессенджера */
+@media (max-width: 640px) {
+  .main {
+    padding: 12px;
+    padding-bottom: calc(env(safe-area-inset-bottom) + 12px);
+  }
+}

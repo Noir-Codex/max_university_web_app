@@ -1,0 +1,70 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.dropzone {
+  border: 2px dashed var(--tg-theme-hint-color, #e5e7eb);
+  border-radius: 12px;
+  padding: 40px 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  background: var(--tg-theme-secondary-bg-color, #f9fafb);
+}
+
+.dropzone:hover, .dropzone.active {
+  border-color: var(--tg-theme-button-color, #3390ec);
+  background: rgba(51, 144, 236, 0.05);
+}
+
+.placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon {
+  font-size: 48px;
+}
+
+.text {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--tg-theme-text-color, #000000);
+}
+
+.hint {
+  margin: 0;
+  font-size: 13px;
+  color: var(--tg-theme-hint-color, #6b7280);
+}
+
+.fileInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.fileName {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--tg-theme-text-color, #000000);
+}
+
+.fileSize {
+  font-size: 13px;
+  color: var(--tg-theme-hint-color, #6b7280);
+}
+
+.error {
+  margin: 0;
+  padding: 12px;
+  background: #fee2e2;
+  color: #991b1b;
+  border-radius: 8px;
+  font-size: 14px;
+}

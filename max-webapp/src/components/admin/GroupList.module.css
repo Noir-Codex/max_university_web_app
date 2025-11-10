@@ -1,0 +1,96 @@
+.loadingContainer {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.emptyState {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.emptyText {
+  margin: 0;
+  font-size: 16px;
+  color: var(--tg-theme-hint-color, #6b7280);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: var(--tg-theme-bg-color, #ffffff);
+  border: 1px solid var(--tg-theme-hint-color, #e5e7eb);
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--tg-theme-hint-color, #e5e7eb);
+}
+
+.groupName {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--tg-theme-text-color, #000000);
+}
+
+.badge {
+  padding: 6px 12px;
+  background: var(--tg-theme-button-color, #3390ec);
+  color: #ffffff;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.info {
+  margin-bottom: 16px;
+}
+
+.infoItem {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 8px 0;
+  font-size: 14px;
+}
+
+.infoLabel {
+  color: var(--tg-theme-hint-color, #6b7280);
+}
+
+.infoValue {
+  color: var(--tg-theme-text-color, #000000);
+  font-weight: 500;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.actions button {
+  flex: 1;
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

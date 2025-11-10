@@ -1,0 +1,116 @@
+.container {
+  background: var(--tg-theme-bg-color, #ffffff);
+  border: 1px solid var(--tg-theme-hint-color, #e5e7eb);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.title {
+  margin: 0 0 20px 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--tg-theme-text-color, #000000);
+}
+
+.summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+  padding: 20px;
+  background: var(--tg-theme-secondary-bg-color, #f9fafb);
+  border-radius: 8px;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.statLabel {
+  font-size: 13px;
+  color: var(--tg-theme-hint-color, #6b7280);
+}
+
+.statValue {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--tg-theme-text-color, #000000);
+}
+
+.statValue.new {
+  color: #10b981;
+}
+
+.statValue.updated {
+  color: #3b82f6;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.sectionTitle {
+  margin: 0 0 12px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--tg-theme-text-color, #000000);
+}
+
+.issues {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.issue {
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.issue.error {
+  background: #fee2e2;
+  border-left: 3px solid #ef4444;
+}
+
+.issue.warning {
+  background: #fef3c7;
+  border-left: 3px solid #f59e0b;
+}
+
+.issueRow {
+  font-size: 12px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.issueMsg {
+  font-size: 14px;
+  color: #1f2937;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid var(--tg-theme-hint-color, #e5e7eb);
+}
+
+.actions button {
+  flex: 1;
+}
+
+.note {
+  margin: 12px 0 0 0;
+  padding: 12px;
+  background: #fee2e2;
+  color: #991b1b;
+  border-radius: 8px;
+  font-size: 13px;
+  text-align: center;
+}

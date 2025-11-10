@@ -1,0 +1,119 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 16px;
+}
+
+.dialog {
+  background: var(--tg-theme-bg-color, #ffffff);
+  border-radius: 12px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.dialog.danger {
+  border-top: 3px solid #ef4444;
+}
+
+.dialog.warning {
+  border-top: 3px solid #f59e0b;
+}
+
+.header {
+  padding: 20px 20px 16px;
+  border-bottom: 1px solid var(--tg-theme-hint-color, #e5e7eb);
+}
+
+.title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--tg-theme-text-color, #000000);
+}
+
+.content {
+  padding: 20px;
+}
+
+.message {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--tg-theme-text-color, #000000);
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  padding: 16px 20px 20px;
+  border-top: 1px solid var(--tg-theme-hint-color, #e5e7eb);
+}
+
+.cancelButton,
+.confirmButton {
+  flex: 1;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.cancelButton {
+  background: var(--tg-theme-secondary-bg-color, #f3f4f6);
+  color: var(--tg-theme-text-color, #000000);
+}
+
+.cancelButton:hover {
+  background: #e5e7eb;
+}
+
+.confirmButton {
+  background: var(--tg-theme-button-color, #3390ec);
+  color: var(--tg-theme-button-text-color, #ffffff);
+}
+
+.confirmButton:hover {
+  opacity: 0.9;
+}
+
+.dangerButton {
+  background: #ef4444;
+  color: #ffffff;
+}
+
+.dangerButton:hover {
+  background: #dc2626;
+}
+
+.warningButton {
+  background: #f59e0b;
+  color: #ffffff;
+}
+
+.warningButton:hover {
+  background: #d97706;
+}
+
+@media (max-width: 480px) {
+  .actions {
+    flex-direction: column-reverse;
+  }
+  
+  .cancelButton,
+  .confirmButton {
+    width: 100%;
+  }
+}

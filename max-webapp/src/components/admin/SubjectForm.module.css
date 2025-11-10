@@ -1,0 +1,68 @@
+.form {
+  background: var(--tg-theme-bg-color, #ffffff);
+  border: 1px solid var(--tg-theme-hint-color, #e5e7eb);
+  border-radius: 12px;
+  padding: 24px;
+  max-width: 600px;
+}
+
+.title {
+  margin: 0 0 24px 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--tg-theme-text-color, #000000);
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--tg-theme-text-color, #000000);
+}
+
+.input,
+.select {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid var(--tg-theme-hint-color, #e5e7eb);
+  border-radius: 8px;
+  font-size: 14px;
+  color: var(--tg-theme-text-color, #000000);
+  background: var(--tg-theme-bg-color, #ffffff);
+}
+
+.input:focus,
+.select:focus {
+  outline: none;
+  border-color: var(--tg-theme-button-color, #3390ec);
+}
+
+.error {
+  display: block;
+  margin-top: 6px;
+  font-size: 12px;
+  color: #ef4444;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid var(--tg-theme-hint-color, #e5e7eb);
+}
+
+.actions button {
+  flex: 1;
+}

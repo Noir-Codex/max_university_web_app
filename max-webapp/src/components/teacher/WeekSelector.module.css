@@ -1,0 +1,110 @@
+.selector {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  background-color: var(--tg-theme-secondary-bg-color, #f1f3f4);
+  border-radius: 12px;
+  flex-wrap: wrap;
+}
+
+.viewModeToggle {
+  display: flex;
+  gap: 4px;
+  background-color: var(--tg-theme-bg-color, #ffffff);
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.viewModeButton {
+  padding: 8px 16px;
+  border: none;
+  background: transparent;
+  color: var(--tg-theme-hint-color, #929292);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.viewModeButton:hover {
+  background-color: var(--tg-theme-secondary-bg-color, #f1f3f4);
+}
+
+.viewModeButton.active {
+  background-color: var(--tg-theme-button-color, #3390ec);
+  color: var(--tg-theme-button-text-color, #ffffff);
+}
+
+.weekInfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 200px;
+}
+
+.monthInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  min-width: 120px;
+}
+
+.label {
+  font-size: 14px;
+  color: var(--tg-theme-text-color, #000);
+  font-weight: 500;
+}
+
+.weekTypeButton {
+  padding: 8px 16px;
+  background: var(--tg-theme-button-color, #3390ec);
+  color: var(--tg-theme-button-text-color, #fff);
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  white-space: nowrap;
+}
+
+.weekTypeButton:hover {
+  opacity: 0.85;
+}
+
+.weekTypeButton:active {
+  opacity: 0.7;
+}
+
+.resetButton {
+  padding: 6px 10px;
+  background: var(--tg-theme-secondary-bg-color, #f1f3f4);
+  color: var(--tg-theme-text-color, #000);
+  border: 1px solid var(--tg-theme-hint-color, #ccc);
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.resetButton:hover {
+  background: var(--tg-theme-hint-color, #e0e0e0);
+}
+
+.resetButton:active {
+  transform: scale(0.95);
+}
+
+.monthName {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--tg-theme-text-color, #000000);
+}
+
+.monthNumber {
+  font-size: 14px;
+  color: var(--tg-theme-hint-color, #929292);
+}

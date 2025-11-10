@@ -1,0 +1,151 @@
+/* MAX WebApp стили - адаптированы для мессенджера MAX */
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  /* MAX Theme переменные */
+  --max-bg-color: var(--tg-theme-bg-color, #ffffff);
+  --max-text-color: var(--tg-theme-text-color, #000000);
+  --max-hint-color: var(--tg-theme-hint-color, #999999);
+  --max-link-color: var(--tg-theme-link-color, #3390ec);
+  --max-button-color: var(--tg-theme-button-color, #3390ec);
+  --max-button-text-color: var(--tg-theme-button-text-color, #ffffff);
+  --max-secondary-bg-color: var(--tg-theme-secondary-bg-color, #f1f3f4);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: var(--max-bg-color);
+  color: var(--max-text-color);
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  /* Убираем отступы для MAX WebApp */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overscroll-behavior: none;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+a {
+  font-weight: 500;
+  color: var(--max-link-color);
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+a:hover, a:active {
+  opacity: 0.8;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--max-text-color);
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.75rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--max-button-color);
+  color: var(--max-button-text-color);
+  cursor: pointer;
+  transition: opacity 0.2s;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+button:hover, button:active {
+  opacity: 0.85;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 2px solid var(--max-button-color);
+  outline-offset: 2px;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  h2 {
+    font-size: 1.25rem;
+  }
+  
+  h3 {
+    font-size: 1.1rem;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 0.95em;
+  }
+}
+
+/* Убираем скроллбары для более нативного вида */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+/* Поддержка темной темы MAX */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --max-bg-color: var(--tg-theme-bg-color, #18222d);
+    --max-text-color: var(--tg-theme-text-color, #ffffff);
+    --max-hint-color: var(--tg-theme-hint-color, #708499);
+    --max-secondary-bg-color: var(--tg-theme-secondary-bg-color, #131e29);
+  }
+}

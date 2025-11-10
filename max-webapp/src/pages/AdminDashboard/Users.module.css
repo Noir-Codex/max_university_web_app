@@ -1,0 +1,151 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  padding: 20px;
+}
+
+.modalContent {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.modalContent h2 {
+  color: #1a1a1a;
+  margin-bottom: 16px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.container {
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--tg-theme-text-color, #000000);
+}
+
+.formContainer {
+  margin-bottom: 24px;
+}
+
+/* Стили для списка студентов */
+.studentsCount {
+  margin: 0 0 20px 0;
+  color: #1a1a1a !important;
+  font-size: 15px !important;
+  font-weight: 500;
+  padding: 12px;
+  background: #f5f5f5;
+  border-radius: 8px;
+}
+
+.studentsList {
+  margin: 16px 0 24px 0;
+  max-height: 400px;
+  overflow-y: auto;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.studentsList p {
+  color: #666666 !important;
+  padding: 20px;
+  text-align: center;
+}
+
+.studentItem {
+  display: flex;
+  flex-direction: column;
+  padding: 14px 16px;
+  border-bottom: 1px solid #e0e0e0;
+  gap: 6px;
+  background: #ffffff;
+  transition: background 0.2s;
+}
+
+.studentItem:hover {
+  background: #f8f9fa;
+}
+
+.studentItem:last-child {
+  border-bottom: none;
+}
+
+.studentName {
+  font-weight: 600;
+  color: #1a1a1a !important;
+  font-size: 16px;
+}
+
+.studentEmail {
+  font-size: 14px;
+  color: #666666 !important;
+}
+
+.noStudents {
+  text-align: center;
+  color: #999999 !important;
+  padding: 40px 20px;
+  font-style: italic;
+  font-size: 15px;
+}
+
+.modalContent button {
+  margin-top: 8px;
+  background: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.modalContent button:hover {
+  background: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 16px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .header button {
+    width: 100%;
+  }
+}

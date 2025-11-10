@@ -1,0 +1,68 @@
+.item {
+  padding: 16px;
+  background-color: var(--tg-theme-bg-color, #ffffff);
+  border: 1px solid var(--tg-theme-section-separator-color, #e4e7e9);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.item:active {
+  transform: translateY(0);
+}
+
+.item.today {
+  border-color: var(--tg-theme-button-color, #3390ec);
+  border-width: 2px;
+  background-color: rgba(51, 144, 236, 0.05);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.type {
+  padding: 4px 8px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-radius: 6px;
+}
+
+.time {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--tg-theme-text-color, #000000);
+}
+
+.subject {
+  margin: 0 0 12px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--tg-theme-text-color, #000000);
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.group {
+  color: var(--tg-theme-button-color, #3390ec);
+  font-weight: 500;
+}
+
+.room {
+  color: var(--tg-theme-hint-color, #929292);
+}

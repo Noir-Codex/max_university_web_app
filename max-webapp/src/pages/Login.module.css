@@ -1,0 +1,166 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+}
+
+.loginBox {
+  max-width: 450px;
+  width: 100%;
+  background: var(--tg-theme-bg-color, #ffffff);
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--tg-theme-text-color, #333);
+  margin: 0 0 8px 0;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: var(--tg-theme-hint-color, #666);
+  margin: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--tg-theme-text-color, #333);
+}
+
+.input {
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 2px solid var(--tg-theme-hint-color, #e0e0e0);
+  border-radius: 8px;
+  background: var(--tg-theme-bg-color, #ffffff);
+  color: var(--tg-theme-text-color, #333);
+  transition: border-color 0.2s;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--tg-theme-button-color, #667eea);
+}
+
+.input:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  background: #fee;
+  border: 1px solid #fcc;
+  border-radius: 8px;
+  color: #c33;
+  font-size: 14px;
+}
+
+.errorIcon {
+  font-size: 18px;
+}
+
+.submitButton {
+  margin-top: 8px;
+  padding: 14px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.submitButton:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.submitButton:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.submitButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.footer {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid var(--tg-theme-hint-color, #e0e0e0);
+}
+
+.hint {
+  font-size: 14px;
+  color: var(--tg-theme-hint-color, #666);
+  margin: 0 0 12px 0;
+  text-align: center;
+}
+
+.testAccounts {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.testAccount {
+  padding: 12px;
+  background: var(--tg-theme-secondary-bg-color, #f5f5f5);
+  border-radius: 8px;
+  font-size: 13px;
+  color: var(--tg-theme-text-color, #333);
+  line-height: 1.6;
+}
+
+.testAccount strong {
+  color: var(--tg-theme-button-color, #667eea);
+}
+
+/* Адаптивность */
+@media (max-width: 480px) {
+  .loginBox {
+    padding: 24px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+}
+
+
+

@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 24px;
+  background-color: var(--tg-theme-secondary-bg-color, #f1f3f4);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.icon {
+  font-size: 48px;
+  line-height: 1;
+}
+
+.message {
+  margin: 0;
+  font-size: 14px;
+  color: var(--tg-theme-text-color, #000000);
+}
+
+.retryButton {
+  margin-top: 8px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--tg-theme-button-color, #3390ec);
+  background: transparent;
+  border: 1px solid var(--tg-theme-button-color, #3390ec);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.retryButton:hover {
+  background-color: var(--tg-theme-button-color, #3390ec);
+  color: var(--tg-theme-button-text-color, #ffffff);
+}
+
+.retryButton:active {
+  transform: scale(0.98);
+}

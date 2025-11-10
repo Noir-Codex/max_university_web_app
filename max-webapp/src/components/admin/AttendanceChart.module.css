@@ -1,0 +1,76 @@
+.chart {
+  background: var(--tg-theme-bg-color, #ffffff);
+  border: 1px solid var(--tg-theme-hint-color, #e5e7eb);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  color: var(--tg-theme-hint-color, #6b7280);
+  font-size: 16px;
+}
+
+.bars {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  gap: 12px;
+  height: 300px;
+  padding: 20px 0;
+}
+
+.barItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  min-width: 60px;
+}
+
+.bar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.barFill {
+  width: 80%;
+  background: var(--tg-theme-button-color, #3390ec);
+  border-radius: 8px 8px 0 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 8px;
+  transition: height 0.3s ease;
+  position: relative;
+}
+
+.barValue {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.barLabel {
+  font-size: 12px;
+  color: var(--tg-theme-text-color, #000000);
+  text-align: center;
+  word-break: break-word;
+}
+
+@media (max-width: 640px) {
+  .bars {
+    height: 250px;
+  }
+  
+  .barLabel {
+    font-size: 10px;
+  }
+}

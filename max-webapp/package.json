@@ -1,0 +1,60 @@
+{
+  "name": "max-attendance-webapp",
+  "description": "MAX Attendance Tracker - Frontend WebApp для системы учета посещаемости",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "author": "MAX Development Team",
+  "license": "ISC",
+  "homepage": "https://github.com/yourusername/max-attendance#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/max-attendance.git",
+    "directory": "max-webapp"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/max-attendance/issues"
+  },
+  "keywords": [
+    "telegram",
+    "webapp",
+    "attendance",
+    "education",
+    "react",
+    "vite",
+    "max-platform"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.90.7",
+    "axios": "^1.13.2",
+    "date-fns": "^4.1.0",
+    "i18next": "^25.6.1",
+    "prop-types": "^15.8.1",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-hook-form": "^7.66.0",
+    "react-i18next": "^16.2.4",
+    "react-router-dom": "^7.9.5",
+    "zustand": "^5.0.8"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.36.0",
+    "@types/react": "^19.1.16",
+    "@types/react-dom": "^19.1.9",
+    "@vitejs/plugin-react": "^5.0.4",
+    "eslint": "^9.36.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.22",
+    "globals": "^16.4.0",
+    "prettier": "^3.6.2",
+    "vite": "^7.1.7",
+    "vite-plugin-pwa": "^1.1.0"
+  }
+}

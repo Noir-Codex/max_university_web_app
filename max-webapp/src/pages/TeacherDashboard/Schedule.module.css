@@ -1,0 +1,85 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Панель инструментов */
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+}
+
+.filterBox {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background-color: var(--tg-theme-secondary-bg-color, #f1f3f4);
+  border-radius: 12px;
+}
+
+.filterLabel {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--tg-theme-text-color, #000000);
+  white-space: nowrap;
+}
+
+.filterSelect {
+  padding: 8px 12px;
+  font-size: 14px;
+  font-family: inherit;
+  color: var(--tg-theme-text-color, #000000);
+  background-color: var(--tg-theme-bg-color, #ffffff);
+  border: 1px solid var(--tg-theme-section-separator-color, #e4e7e9);
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+}
+
+.filterSelect:focus {
+  border-color: var(--tg-theme-button-color, #3390ec);
+}
+
+/* Нет расписания */
+.noSchedule {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 48px 24px;
+  background-color: var(--tg-theme-secondary-bg-color, #f1f3f4);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.noScheduleIcon {
+  font-size: 64px;
+  line-height: 1;
+}
+
+.noSchedule p {
+  margin: 0;
+  font-size: 16px;
+  color: var(--tg-theme-hint-color, #929292);
+}
+
+@media (max-width: 640px) {
+  .toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filterBox {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filterSelect {
+    width: 100%;
+  }
+}

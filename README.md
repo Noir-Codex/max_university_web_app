@@ -132,7 +132,7 @@ VITE_API_BASE_URL=https://example.com/api npm run build
 
 Собранные файлы появятся в `max-webapp/dist`. Их можно отдавать через Nginx / Express / статический хостинг.
 
-## Деплой на один сервер (пример Timeweb VPS)
+## Деплой на один сервер 
 
 1. **Установить зависимости на сервере:**
    ```bash
@@ -221,9 +221,5 @@ systemctl reload nginx
 - `curl http://localhost:3001/health` — проверка API.
 - Если фронтенд выдаёт `Failed to fetch`, убедитесь, что `ALLOWED_ORIGINS` на бэке содержит `http://localhost:3000`, а Vite запущен на этом порту (strictPort).
 
-## Лицензия
-
-Проект распространяется на условиях лицензии MIT (если требуется иное — укажите здесь).  
-© 2025 MAX WebApp.
 
 
